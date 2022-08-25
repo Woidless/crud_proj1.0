@@ -47,8 +47,6 @@ def create():
     json.dump(data, open(FILE_NAME, 'w'))
     return 'CREATED!!!'
 
-
-
 def retrieve():
     '''
     get one product from data
@@ -61,7 +59,7 @@ def retrieve():
 
 def update():
     '''
-    update one product from data
+    update one product in data
     '''
     data = get_data()
     message = 'data is incomplete\nNOT CHAGED'
@@ -92,7 +90,7 @@ def update():
         data[index_]['description'] = input('Enter new description: ')
         if not data[index_]['description']: return 'data is incomplete\nNOT CHAGED'
 
-    elif choice_ == '5': 
+    elif choice_ == '5': # price
         data[index_]['price'] = round(float(input('Enter new price: ')), 2)
         if not data[index_]['price']: return 'data is incomplete\nNOT CHAGED'
 
@@ -105,7 +103,7 @@ def update():
 
 def delete():
     '''
-    delete product from data
+    delete product in data
     '''
     data = get_data()
     id_ = int(input('Enter the ID of the product you want to DELETE: '))
