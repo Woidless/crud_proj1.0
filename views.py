@@ -80,19 +80,19 @@ def update():
 
     elif choice_ == '2': # model
         data[index_]['model'] = input('Enter new name of brand: ')
-        if not data[index_]['model']: return 'data is incomplete\nNOT CHAGED'
+        if not data[index_]['model']: return message
 
     elif choice_ == '3': # year
         data[index_]['year'] = int(input('Enter new year: '))
-        if not data[index_]['year']: return 'data is incomplete\nNOT CHAGED'
+        if not data[index_]['year']: return message
 
     elif choice_ == '4': # description
         data[index_]['description'] = input('Enter new description: ')
-        if not data[index_]['description']: return 'data is incomplete\nNOT CHAGED'
+        if not data[index_]['description']: return message
 
     elif choice_ == '5': # price
         data[index_]['price'] = round(float(input('Enter new price: ')), 2)
-        if not data[index_]['price']: return 'data is incomplete\nNOT CHAGED'
+        if not data[index_]['price']: return message
 
     else: return 'The command not found\nNOT CHENGED'
 
