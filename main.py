@@ -4,7 +4,7 @@ def main():
     while True:
         print('Choose a command\n1-create\t2-listing\t3-retrieve\t4-update\t5-delete\n'+'-'*50)
         choice_ = input('Enter a command: ')
-        print('-'*50)
+        print('-'*100)
         if choice_ == '1': print(create())
 
         elif choice_ == '2': print(listing())
@@ -17,12 +17,12 @@ def main():
 
         else: print('The command not found')
 
-        print('-'*50)
+        print('-'*100)
         next_ = input('continue work?(no): ')
         if next_.lower() == 'no':
             break
-        print('-'*50)
+        print('-'*1020)
         
 # вызов функции
 main()
-print('-'*50+'\nGoodbye')
+print('-'*100+'\nGoodbye')

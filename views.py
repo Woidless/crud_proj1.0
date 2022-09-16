@@ -7,6 +7,7 @@ def get_data():
     for get list of data from json file
     '''
     with open(FILE_NAME) as file:
+        if not file: return []
         return json.load(file)
 
 id_ = 1
